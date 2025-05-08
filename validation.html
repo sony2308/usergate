@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>User Validation Form</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="style.css" />
+        
+    </head>
+    <body>
+     <div class="con">
+        <h1 class="text-center">REGISTRATION FORM</h1>
+        <br>
+         <form id="reg" novalidate>
+
+    <div class="form-grp">
+     <label for="firstname">First Name * :</label>
+      &nbsp;
+     <input type="text" class="form-ctrl" id="firstname" required/>
+     <small class="text-danger" id="nameError"></small>
+      &nbsp;&nbsp;
+     <label for="lastname">Last Name * :</label>
+     &nbsp;
+     <input type="text" class="form-ctrl" id="lastname" required/>
+     <small class="text-danger" id="nameError"></small>
+     </div>
+    
+     <div class="form-grp">
+      <label for="email">Email ID * :</label>
+      &nbsp;
+      <input type="text" class="form-ctrl" id="email" required/> 
+      <small class="text-danger" id="emailError"></small>
+     </div>
+
+     <div class="form-grp">
+      <label for="phnum">Mobile Number * :</label>
+       &nbsp;
+      <input type="text" class="form-ctrl" id="phnum" required/> 
+      <small class="text-danger" id="phnumError"></small>
+       </div>
+
+      <div class="form-grp">
+     <label for="password">Password * :</label>
+     &nbsp;
+     <input type="text" class="form-ctrl" id="password" required/> 
+     <small class="text-danger" id="passwordError"></small>
+     </div>
+
+     <div class="form-grp">
+     <label for="confirmpassword">Confirm Password * :</label>
+     &nbsp;
+     <input type="text" class="form-ctrl" id="confirmpassword" required/> 
+     <small class="text-danger" id="confirmPasswordError"></small>
+    </div>
+    
+     <div class="form-check">
+       <label for="gender">Gender * :</label>
+       &nbsp;
+      Male&nbsp;<input type="radio"  name="gender" id="male" value="Male" />
+      Female&nbsp;<input type="radio"  name="gender" id="Female" value="Female" />
+      </div>
+      
+      <div class="form-grp">
+      <label for="address">Address * :</label>
+       &nbsp;
+      <input  type="text" class="form-ctrl" id="address" required/> 
+      </div>
+      <br>
+      
+      
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+         </form>
+     </div>
+
+     <script src="script.js"></script>
+</body>
+</html>
+   
